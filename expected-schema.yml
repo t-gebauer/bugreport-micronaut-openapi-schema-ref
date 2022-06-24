@@ -1,0 +1,16 @@
+openapi: 3.0.1
+info:
+  title: bugreport-openapi-schema-ref
+  version: "0.0"
+paths:
+  /:
+    get:
+      operationId: getFoo
+      parameters: []
+      responses:
+        "200":
+          description: success
+          content:
+            application/json:
+              schema:
+                $ref: "#/components/schemas/SomethingFoo"
